@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/gateway-auth",
+    "description": "Package gateway-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\GatewayAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/http-foundation": "^7.0",
+        "league/commonmark": "^2.0",
+        "symfony/routing": "^7.0",
+        "brick/math": "^0.12",
+        "symfony/yaml": "^7.0",
+        "psc-acme/plugin-auth": "^1.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "phpstan/phpstan": "^1.0",
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
